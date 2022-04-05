@@ -1,0 +1,72 @@
+:root {
+    --color-primary: #FD377E;
+    --color-primaty-2: #E34981;
+    --color-secondary: #03B898;
+
+    --grey-4: #212529;
+    --grey-3: #868E96;
+    --grey-2: #E9ECEF;
+    --grey-1: #F8F9FA;
+
+    --font-nunito: 'Nunito', sans-serif;
+}
+
+.div__filter{
+    width: 95vw;
+    min-width: 280px;
+    max-width: 560px;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--grey-4);
+    
+}
+
+.div__filter p {
+    margin: 0px;
+}
+
+.div__btn {
+    display: flex;
+}
+
+.div__btn button {
+    height: 40px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 8px;
+    background: var(--grey-2);
+    color: var(--grey-3);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    transition: 0.3s;
+}
+
+.div__btn button:hover{
+    cursor: pointer;
+    color: var(--grey-1);
+    background: var(--grey-3);
+}
+
+.div__btn .btn__todos {
+    background: var(--color-primary);
+    color: white;    
+}
+
+.div__btn .btn__todos:hover{
+    background: var(--color-primaty-2);
+}
+
+@media screen and (min-width:1024px) {
+    .div__filter{
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,135 @@
+:root {
+    --color-primary: #FD377E;
+    --color-primaty-2: #E34981;
+    --color-secondary: #03B898;
+
+    --grey-4: #212529;
+    --grey-3: #868E96;
+    --grey-2: #E9ECEF;
+    --grey-1: #F8F9FA;
+
+    --font-nunito: 'Nunito', sans-serif;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+form {    
+    flex-grow: 1;
+    width: 95vw;
+    min-width: 300px;
+    max-width: 363px;
+    height: 351px;
+    min-height: 200px;
+    max-height: 352px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.div-form__input-descricao {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-left: 5px;
+    font-family: var(--font-nunito);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    color: var(--grey-4);
+}
+input {
+    height: 52.8px;
+    border: none;
+    background: var(--grey-2);
+    border-radius: 8px;
+    padding: 0px 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--grey-3);
+    transition: 0.2s;
+}
+
+input:focus{
+    background: white;
+
+}
+.div-form__input-descricao .label__exemplo {
+    color: var(--grey-3);
+}
+
+.div-form__value{
+    display: flex;
+    justify-content: space-between;
+}
+.div-form__input-value, .div-form__input-type{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-form__input-value{
+    position: relative;
+}
+.div-form__input-value input {
+    height: 48px;
+    width: 120px;
+    padding: 0px 40px 0px 10px;
+    box-sizing: border-box;
+}
+
+.div-form__input-value span {
+    position: absolute;
+    right: 10px;
+    top: 36px;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--grey-3);
+}
+
+.div-form__input-type select{
+    height: 48px;
+    border: none;
+    color: var(--grey-3);
+    background: var(--grey-2);
+    width: 130px;
+    border-radius: 8px;
+}
+
+form button {
+    border: none;
+    border-radius: 8px;
+    background: var(--color-primary);
+    width: 90%;
+    min-width: 260px;
+    max-width: 314px;
+    align-self: center;
+    height: 48px;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: var(--font-nunito);
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+form button:hover{
+    background: var(--color-primaty-2);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+    form {
+        flex-direction: column;
+    }
+}
